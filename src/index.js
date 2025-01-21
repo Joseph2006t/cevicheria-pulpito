@@ -26,3 +26,4 @@ console.log('Server is running on port 3000'); // mensaje de confirmacion
 
 
 
+// el app.use se usa para traer rutas de algo agregado y el app.set carpetas y archivos de un formato
