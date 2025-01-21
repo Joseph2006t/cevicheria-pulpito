@@ -9,4 +9,7 @@ router.get('/contacto', (req,res) => res.render('contacto',{title:'Contactanos'}
 router.get('/promociones', (req,res) => res.render('promociones',{title:'Acerca de las Promociones'}));
 
 router.get('/redes-sociales', (req,res) => res.render('redes-sociales',{title:'Redes Sociales'}));
+
+router.get('/catalogo', (req,res) => res.render('catalogo',{title:'Catalogo de Productos'}));
+
 export default router; // exporta el router para ser utilizado en otros archivos
