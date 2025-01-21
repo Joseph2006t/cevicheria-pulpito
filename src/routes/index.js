@@ -12,4 +12,6 @@ router.get('/redes-sociales', (req,res) => res.render('redes-sociales',{title:'R
 
 router.get('/catalogo', (req,res) => res.render('catalogo',{title:'Catalogo de Productos'}));
 
+router.get('/sobrenosotros', (req,res) => res.render('sobrenosotros',{title:'Sobre Nosotros'}));
+
 export default router; // exporta el router para ser utilizado en otros archivos
