@@ -7,6 +7,18 @@ body {
     color: white;
 }
 
+
+.p-4 {
+    position: relative;
+}
+.p-4 img {
+    width: 30px; /* Imagen un poco más grande */
+    height: 30px;
+    position: absolute;
+    bottom: -40px; /* Más abajo */
+    left: 25px; /* Más a la derecha */
+}
+
 /* Títulos estilizados */
 h1 {
     font-size: 3rem;
