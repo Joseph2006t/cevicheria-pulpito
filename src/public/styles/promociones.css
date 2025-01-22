@@ -1,3 +1,6 @@
+
+
+
 /* Botón de flecha */
 .p-4 {
     position: relative;
@@ -17,6 +20,7 @@ h2{
 }
 
 .card {
+    
     display: block;
     text-decoration: none;
     color: inherit; /* Preserva el color del texto */

@@ -48,7 +48,8 @@ header h1 {
 .about-text {
     flex: 2;
     font-size: 1.1em;
-    color: #555;
+    color: #0e0d0d;
+    
 }
 
 .about-image {
@@ -62,6 +63,7 @@ header h1 {
 
 .philosophy {
     margin-top: 40px;
+    
 }
 
 .philosophy h2 {
@@ -71,6 +73,7 @@ header h1 {
 }
 
 .philosophy-items {
+    
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -78,8 +81,9 @@ header h1 {
 }
 
 .philosophy-item {
+    
     flex: 1;
-    background: #f7f9fb;
+    background: #aacbec;
     border-radius: 10px;
     padding: 20px;
     text-align: center;

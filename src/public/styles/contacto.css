@@ -39,7 +39,10 @@ h1 {
 
 /* Imagen principal (logo) */
 img[alt="ImagenLogo"] {
-    display: block;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    
     margin: 0 auto;
     max-width: 100%;
     height: auto;
@@ -53,14 +56,14 @@ img[alt="ImagenLogo"] {
 }
 
 .botones .boton1, .botones .boton2, .botones .boton3, .botones .boton4 {
-    margin: 10px 0;
+    margin: 0px 0;
 }
 
 .botones h4 {
     font-size: 1.2rem;
     color: black;
     background-color: aqua;
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     width: 200px; /* Botones del mismo tamaño */
     display: inline-block;
@@ -150,5 +153,21 @@ img[alt="ImagenLogo"] {
 
     .social-icon a {
         font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 769px){
+
+    .botones h4 {
+        font-size: 2rem;
+        color: black;
+        background-color: aqua;
+        padding: 20px;
+        border-radius: 5px;
+        width: 500px; /* Botones del mismo tamaño */
+        display: inline-block;
+        transition: background-color 0.3s;
+        text-align: center;
+        margin: 0 auto;
     }
 }

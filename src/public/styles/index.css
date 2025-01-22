@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, #1e3c72, #2a5298);
+    
     color: #fff;
 }
 
@@ -19,9 +19,13 @@ body::before {
     z-index: -1;
 }
 
+
+
+
+
 /* General styles for the navigation */
 nav {
-    background-color: #4CAF50; /* Green background */
+    background-color: #5597e2; /* Green background */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -55,9 +59,12 @@ nav a {
 
 /* Hover effect for links */
 nav a:hover {
-    background-color: #45a049; /* Slightly darker green */
-    color: #ffffff;
+    background-color: #3164ee; /* Slightly darker green */
+    color: #ffc402;
 }
+
+
+
 
 
 /* Contenedor principal */
