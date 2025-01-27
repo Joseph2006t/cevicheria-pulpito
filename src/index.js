@@ -17,7 +17,7 @@ app.set('view engine', 'ejs'); // especifica o motor de renderizacion
 app.use(express.static(join(__dirname, 'public')));
 
 
-app.get('/', (req, res) => res.render('index')); // renderiza a vista index.ejs
+app.get('/', (req, res) => res.render('about')); // renderiza a vista index.ejs
 app.use(router)
 app.listen(3000); 
 console.log('Server is running on port 3000'); // mensaje de confirmacion
