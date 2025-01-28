@@ -12,7 +12,7 @@ body {
     font-family: 'Segoe UI', 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #2ba4c5; /* Fondo general claro */
+    background-color: #0b4c5e; /* Fondo general claro */
     color: #2b2b2b; /* Texto principal */
 }
 
@@ -45,26 +45,18 @@ body {
     justify-content: center;
 }
 
-  /* Diseño de contenedor */
-.container-fluid {
-    max-width: 1400px; /* Ancho máximo para centrar */
-    margin: 0 auto;
-}
+
 
   /* Transición de elementos al hacer hover */
 .nav-item {
     margin: 0 5px;
 }
 
-  /* Enlaces generales */
-a {
-    text-decoration: none;
-}
-
 a:hover {
     text-decoration: underline;
     opacity: 0.8;
 }
+
 
   /* Botón colapsable (para móviles) */
 .navbar-toggler {
@@ -74,10 +66,6 @@ a:hover {
     color: #ffffff;
 }
 
-.navbar-toggler:focus {
-    outline: none;
-    box-shadow: 0px 0px 8px rgba(0, 90, 135, 0.5); /* Sombra al enfocarse */
-}
 
   /* Media queries para pantallas pequeñas */
 @media (max-width: 768px) {
@@ -91,19 +79,83 @@ a:hover {
     }
 }
 
-  /* Estilo adicional para destacar el menú */
-.navbar-nav .nav-link:before {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0;
-    background: #00a3cc; /* Color turquesa */
-    transition: width 0.3s ease-in-out;
-    margin: 0 auto;
+
+
+
+
+
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 81vh;
+    background: url("/images/ImagenHeader.jpg") no-repeat center center/cover;
+    color: white
 }
 
-.navbar-nav .nav-link:hover:before {
-    width: 50%; /* Línea decorativa al hover */
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: white; /* Letra blanca */
+    -webkit-text-stroke: 1.5px #041f97; /* Borde azul en las letras */
+}
+
+
+
+.hero p {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: white; /* Letra blanca */
+    -webkit-text-stroke: 0.5px #fbff00; /* Borde azul en las letras */
+
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero-buttons a {
+    text-decoration: none;
+    color: white;
+    background-color: #1d3abd;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero-buttons a:hover {
+    background-color: #56a2e9;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+    font-size: 2rem;
+    }
+
+    .hero p {
+    font-size: 1rem;
+    }
+
+    .hero-buttons a {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    }
 }
 
 
@@ -114,6 +166,7 @@ a:hover {
     margin: 0 auto;
     padding: 50px;
     
+    
 }
 
 header {
@@ -123,7 +176,8 @@ header {
 
 header h1 {
     font-size: 2em;
-    color: #333;
+    font-weight: bold;
+    color: #39a8db;
 }
 
 .content {
@@ -159,7 +213,8 @@ header h1 {
 
 .philosophy h2 {
     font-size: 1.8em;
-    color: #333;
+    font-weight: bold;
+    color: #448dec;
     margin-bottom: 10px;
 }
 
@@ -206,6 +261,8 @@ header h1 {
     width: 100%;
     text-align: center;
     font-size: 1.8rem;
+    font-weight: bold;
+    color: #39a8db;
     margin-bottom: 20px;
 }
 
@@ -230,6 +287,14 @@ header h1 {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.map h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #448dec;
+    margin-bottom: 10px;
 }
 
 /* Responsive adjustments */
@@ -346,19 +411,3 @@ header h1 {
     font-size: 24px;
 }
 
-/* Estilo del icono de cerrar dentro del iframe */
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 20px;
-    height: 20px;
-    background-color: #f44336;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    font-size: 14px;
-}
