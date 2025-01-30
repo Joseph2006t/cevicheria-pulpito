@@ -13,9 +13,6 @@ router.get('/redes-sociales', (req,res) => res.render('redes-sociales',{title:'R
 router.get('/catalogo', (req,res) => res.render('catalogo',{title:'Catalogo de Productos'}));
 
 
-router.get('/bot', (req,res) => res.render('bot',{title:'ChatBot'}));
-
-
 router.get('/preguntas-frecuentes', (req,res) => res.render('preguntas-frecuentes',{title:'Preguntas'}));
 
 export default router; // exporta el router para ser utilizado en otros archivos
